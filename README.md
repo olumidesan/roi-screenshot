@@ -1,7 +1,7 @@
 ## Create a screenshot by clicking the edges of the area you want to capture.
 
 ### Background
-This project is a prerequisite to another I'm currently working on that deals with text recognition from images. I have an app on my phone (FooView) that allows me select a text from an image/video/anything really and then translates it to text immediately. I usually do this a lot for links, so I'll just paste the generated text in my browser and go. A demo can be seen [here](https://twitter.com/_Olums/status/1066411959950692353) 
+This project is a prerequisite to another I'm currently working on that deals with text recognition from images. I have an app on my phone (FooView) that allows me draw a boundary box around an image/video/anything really, and then extracts text from the resulting image [almost] immediately. I usually do this a lot for links, so I'll just paste the generated text in my browser and go. A demo can be seen [here](https://twitter.com/_Olums/status/1066411959950692353) 
 I have no app that does that on my laptop so I'm creating one for my use. The steps are simple: select an area with text I want to extract, create an image, then extract the text using ML. This repo is just stage one.
 
 ## Requirements
