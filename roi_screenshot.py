@@ -1,6 +1,8 @@
+
 from pynput.mouse import Listener
 import pyautogui as gui
 import os
+import time
 
 num = 0 # counter for mapping mouse clicks to positions
 
@@ -45,7 +47,8 @@ def imageFormatter(coordinates):
     left = coordinates['top_left'][0]
     top = coordinates['top_left'][1]
 
-    imageCreator(left, top, width, height)
+    return (left, top, width, height)
+
 
 def imageCreator(left, top, width, height):
     """Creates the actual screenshot"""
@@ -54,18 +57,25 @@ def imageCreator(left, top, width, height):
     image = os.path.join(save_location, 'screenshot_' + str(width) + 'x' + str(height) + '.png')
     image_file.save(image)
 
+    print('\nScreenshot created in {}'.format(save_location))
+
+
 def main():
     """Main application"""
+
+    gui.hotkey('altleft', 'space'); gui.press('n') # Hide the terminal so it won't obstruct screenshot selection. (Wasn't tested on OSX)
 
     positions = ['top left', 'top right', 'bottom left', 'bottom right']
     for i in positions:
         print('Click the {} of the screenshot'.format(i))
         activateListener() # start the listener
 
-    imageFormatter(coordinates)
+    image_details = imageFormatter(coordinates)
+    left, top, width, height = image_details
+
+    imageCreator(left, top, width, height)
+
+    gui.hotkey('altleft', 'tab') # Return terminal after main application completes
 
 if __name__ == '__main__':
-    gui.hotkey('altleft', 'space'); gui.press('n') # Hide the terminal so it won't obstruct screenshot selection. (Wasn't tested on OSX)
     main()
-    gui.hotkey('altleft', 'tab') # Return terminal after main application completes
-    print('\nScreenshot created. ')
