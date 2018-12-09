@@ -71,9 +71,8 @@ def main():
         activateListener() # start the listener
 
     image_details = imageFormatter(coordinates)
-    left, top, width, height = image_details
 
-    imageCreator(left, top, width, height)
+    imageCreator(*image_details)
 
     gui.hotkey('altleft', 'tab') # Return terminal after main application completes
 
