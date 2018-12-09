@@ -6,9 +6,9 @@
   - [Pynput](https://pynput.readthedocs.io/en/latest/#)     ```pip install pynput```
   
     On Linux ```pyautogui``` has some extra dependencies. Simply run the following commands from the terminal to install them:
-    ```sudo pip3 install python3-xlib```
-    ```sudo apt-get install scrot```
-    ```sudo apt-get install python3-tk```
+    ```sudo pip3 install python3-xlib```, 
+    ```sudo apt-get install scrot```, 
+    ```sudo apt-get install python3-tk```, and 
     ```sudo apt-get install python3-dev``` 
   
 ## How to Use
@@ -25,7 +25,7 @@
 ### Motivation
 This project is a prerequisite to another I'm currently working on that deals with text extraction from images. I have an app on my phone (FooView) that allows me draw a boundary box around an image/video/anything really, and then extracts text from the resulting image [almost] immediately. I usually do this a lot for links embedded in images. I'll easily just paste the generated text in my browser and go. A demo can be seen [here](https://twitter.com/_Olums/status/1066411959950692353).
 
-I have no app that does this on my laptop so I'm creating one for my use.The steps are simple: select an area with text I want to extract, create an image, then extract the text using ML. This repo is just stage one.
+I have no app that does this on my laptop so I'm creating one for my use.The steps are simple: select an area with text I want to extract, create an image, then extract the text using Optical Character Recognition. This repo is just stage one.
 
 All the other python screenshot libraries/scripts I saw dealt solely with creating select images using coordinates. I wanted one where I could manually create the area screenshot without knowing the coordinates. 
 
