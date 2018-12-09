@@ -1,14 +1,9 @@
 ## Create a screenshot by clicking the edges of the area you want to capture.
 
-### Background
-This project is a prerequisite to another I'm currently working on that deals with text extraction from images. I have an app on my phone (FooView) that allows me draw a boundary box around an image/video/anything really, and then extracts text from the resulting image [almost] immediately. I usually do this a lot for links embedded in images. I'll easily just paste the generated text in my browser and go. A demo can be seen [here](https://twitter.com/_Olums/status/1066411959950692353).
-
-I have no app that does this on my laptop so I'm creating one for my use. The steps are simple: select an area with text I want to extract, create an image, then extract the text using ML. This repo is just stage one.
-
 ## Requirements
   - Python 3.3+
-  - [PyAutoGUI](https://pyautogui.readthedocs.io/en/latest/index.html)
-  - [Pynput](https://pynput.readthedocs.io/en/latest/#) 
+  - [PyAutoGUI](https://pyautogui.readthedocs.io/en/latest/index.html)    ```pip install pyautogui```
+  - [Pynput](https://pynput.readthedocs.io/en/latest/#)     ```pip install pynput```
   
 ## How to Use
   1. After installing the required packages, simply run the script from the folder you want the screenshot to be saved.
@@ -21,5 +16,10 @@ I have no app that does this on my laptop so I'm creating one for my use. The st
 ![](use_case.gif)
   
   
+### Motivation
+This project is a prerequisite to another I'm currently working on that deals with text extraction from images. I have an app on my phone (FooView) that allows me draw a boundary box around an image/video/anything really, and then extracts text from the resulting image [almost] immediately. I usually do this a lot for links embedded in images. I'll easily just paste the generated text in my browser and go. A demo can be seen [here](https://twitter.com/_Olums/status/1066411959950692353).
 
+I have no app that does this on my laptop so I'm creating one for my use.The steps are simple: select an area with text I want to extract, create an image, then extract the text using ML. This repo is just stage one.
+
+All the other python screenshot libraries/scripts I saw dealt solely with creating select images using coordinates. I wanted one where I could manually create the area screenshot without knowing the coordinates. 
 
