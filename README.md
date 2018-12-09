@@ -7,7 +7,7 @@ I have no app that does this on my laptop so I'm creating one for my use. The st
 ## Requirements
   - Python 3.3+
   - [PyAutoGUI](https://pyautogui.readthedocs.io/en/latest/index.html)
-  - [Pynput](https://pynput.readthedocs.io/en/latest/#)
+  - [Pynput](https://pynput.readthedocs.io/en/latest/#) 
   
 ## How to Use
   1. After installing the required packages, simply run the script from the folder you want the screenshot to be saved.
