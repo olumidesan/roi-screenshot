@@ -8,11 +8,10 @@ num = 0 # counter for mapping mouse clicks to positions
 
 save_location = os.path.abspath(os.path.dirname(__file__))
 
-coordinates = {'top_left': None, 'top_right': None,
-               'bottom_left': None, 'bottom_right': None }
+coordinates = { 'top_left': None, 'top_right': None, 'bottom_left': None, 'bottom_right': None }
 
 def on_click(x, y, button, pressed):
-    """Mouse click callback from listener object"""
+    """Mouse-click callback from listener object"""
 
     global num
     if pressed:
