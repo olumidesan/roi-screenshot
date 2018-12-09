@@ -19,7 +19,7 @@
   5. The screenshot itself would be found in the folder you invoked the script from with a '```.png```' extension.
 
 ## Example
-![](use_case.gif)
+
   
   
 ### Motivation
