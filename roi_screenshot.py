@@ -4,6 +4,7 @@ import pyautogui as gui
 import os
 import time
 
+gui.FAILSAFE = False # disable pyautogui's failsafe exception
 num = 0 # counter for mapping mouse clicks to positions
 
 save_location = os.path.abspath(os.path.dirname(__file__))
