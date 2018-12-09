@@ -14,6 +14,8 @@ I have no app that does this on my laptop so I'm creating one for my use. The st
   2. Once the script starts, your terminal will minimize automatically, so as to allow you select the area you want to screenshoot.
   3. **Click** the edges of the area in the following order: top-left, top-right, bottom-left, bottom-right. (Note that it's not a bounding box--there's no dragging, only clicking of the edges)
   4. After clicking the bottom-right, your terminal returns with a message confirming the successful creation of the screenshot.
+
+
   
   
 
