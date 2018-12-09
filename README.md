@@ -1,4 +1,4 @@
-## Create a screenshot by selecting the edges of the area you want to screenshoot.
+## Create a screenshot by clicking the edges of the area you want to capture.
 
 ### Background
 This project is a prerequisite to another I'm currently working on that deals with text recognition from images. I have an app on my phone (FooView) that allows me select a text from an image/video/anything really and then translates it to text immediately. I usually do this a lot for links, so I'll just paste the generated text in my browser and go. A demo can be seen [here](https://twitter.com/_Olums/status/1066411959950692353) 
