@@ -23,7 +23,7 @@
   
   
 ### Motivation
-This project is a prerequisite to another I'm currently working on that deals with text extraction from images. I have an app on my phone (FooView) that allows me draw a boundary box around an image/video/anything really, and then extracts text from the resulting image [almost] immediately. I usually do this a lot for links embedded in images. I'll easily just paste the generated text in my browser and go. A demo can be seen [here](https://twitter.com/_Olums/status/1066411959950692353).
+This project is a prerequisite to another I'm currently working on that deals with text extraction from images. I have an app on my phone (FooView) that allows me draw a boundary box around an image/video/anything really, and then extracts text from the resulting image almost immediately. I usually do this a lot for links embedded in images. I'll easily just paste the generated text in my browser and go. A demo can be seen [here](https://twitter.com/_Olums/status/1066411959950692353).
 
 I have no app that does this on my laptop so I'm creating one for my use.The steps are simple: select an area with text I want to extract, create an image, then extract the text using Optical Character Recognition. This repo is just stage one.
 
