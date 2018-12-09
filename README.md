@@ -18,7 +18,6 @@ I have no app that does this on my laptop so I'm creating one for my use. The st
   5. The screenshot itself would be found in the folder you invoked the script from with '```.png```' extension.
 
 ## Example
-Here's a gif of its usage
 ![](use_case.gif)
   
   
