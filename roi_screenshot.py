@@ -2,6 +2,7 @@
 from pynput.mouse import Listener
 import pyautogui as gui
 import os
+import time
 
 num = 0 # counter for mapping mouse clicks to positions
 
@@ -53,7 +54,7 @@ def imageCreator(left, top, width, height):
     """Creates the actual screenshot"""
 
     image_file = gui.screenshot(region=(left, top, width, height))
-    image = os.path.join(save_location, 'screenshot_' + str(width) + 'x' + str(height) + '.png')
+    image = os.path.join(save_location, 'screenshot_' + time.strftime('%H%M%S') + '.png')
     image_file.save(image)
 
     print('\nScreenshot created in {}'.format(save_location))
