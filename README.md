@@ -5,6 +5,12 @@
   - [PyAutoGUI](https://pyautogui.readthedocs.io/en/latest/index.html)    ```pip install pyautogui```
   - [Pynput](https://pynput.readthedocs.io/en/latest/#)     ```pip install pynput```
   
+    On Linux ```pyautogui``` has some extra dependencies. Simply run the following commands from the terminal to install them:
+    ```sudo pip3 install python3-xlib```
+    ```sudo apt-get install scrot```
+    ```sudo apt-get install python3-tk```
+    ```sudo apt-get install python3-dev``` 
+  
 ## How to Use
   1. After installing the required packages, simply run the script from the folder you want the screenshot to be saved.
   2. Once the script starts, your terminal will minimize automatically, so as to allow you select the area you want to capture without obstruction. On the terminal itself, it's simply print statements that are being displayed.
@@ -22,4 +28,6 @@ This project is a prerequisite to another I'm currently working on that deals wi
 I have no app that does this on my laptop so I'm creating one for my use.The steps are simple: select an area with text I want to extract, create an image, then extract the text using ML. This repo is just stage one.
 
 All the other python screenshot libraries/scripts I saw dealt solely with creating select images using coordinates. I wanted one where I could manually create the area screenshot without knowing the coordinates. 
+
+
 
