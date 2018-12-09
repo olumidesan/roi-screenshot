@@ -2,7 +2,6 @@
 from pynput.mouse import Listener
 import pyautogui as gui
 import os
-import time
 
 num = 0 # counter for mapping mouse clicks to positions
 
