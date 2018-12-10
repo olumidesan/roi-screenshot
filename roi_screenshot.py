@@ -63,7 +63,8 @@ def imageCreator(left, top, width, height):
 def main():
     """Main application"""
 
-    gui.hotkey('altleft', 'space'); gui.press('n') # Hide the terminal so it won't obstruct screenshot selection. (Wasn't tested on OSX)
+    # Minimize the terminal immediately so it won't obstruct screenshot selection. (Tested only on Ubuntu 16.04)
+    gui.hotkey('altleft', 'space'); gui.press('n') 
 
     positions = ['top left', 'top right', 'bottom left', 'bottom right']
     for i in positions:
